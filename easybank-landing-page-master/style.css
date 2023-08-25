@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: 'Public sans', sans-serif;
+   
+}
+
+header {
+    background-color: white;
+    position: absolute;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    width: 100vw;
+    height: 5vh;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li {
+    margin: 10px; 
+
+}
+
+
+ .nav li a {
+   position: relative;
+   margin-left: 20px;
+   color: hsl(233, 8%, 62%);
+   text-decoration: none;
+ }
+.nav li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px;
+    width: 0;
+    height: 4px;
+    background: hsl(233, 8%, 62%);
+    translate: all .5s;
+}
+
+.nav li a:hover::after {
+    width: 100%;
+}
+header button {
+    margin: 150px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+    font-size: 10px;
+}
+
+
+
+.nextgen {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  height: 90vh;
+}
+
+.text {
+    font-size: 16px;
+    padding-left: 20px;
+    width: 400px;
+    text-align: left;
+    font-family: 400;
+    height: 50vh;
+    
+}
+.image {
+    background-image: url(./images/bg-intro-desktop.svg);
+    
+}
+
+.img1 {
+    margin: 40px;
+    width: 100%;
+}
+
+
+.social-media li a{
+    background-color: hsl(233, 8%, 62%);
+}
+
+button {
+    
+}
